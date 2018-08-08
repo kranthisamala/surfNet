@@ -1,2 +1,2 @@
 # surfNet
-trying out node js programming by creating new social media
+Trying out node js programming by creating new social media
