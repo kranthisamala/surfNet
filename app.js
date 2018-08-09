@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var login = require('./Passport_login/')
+const port = process.env.PORT || 3000
 app.use(express.static('public'))
 app.use('/login',login);
 app.get("/",(req,res)=>{
@@ -8,6 +9,6 @@ app.get("/",(req,res)=>{
 })
 
 
-app.listen(3000,() => {
-  console.log("server running at port 3000");
+app.listen(port,() => {
+  console.log(`server running at port ${port}`);
 });
